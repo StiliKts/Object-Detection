@@ -1,7 +1,7 @@
 import sys
 import os
 
-# This is needed since the notebook is stored in the object_detection folder.
+
 sys.path.append("..")
 sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)) + '/models/research/')
 sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)) + '/models/research/object_detection')
@@ -42,7 +42,8 @@ from utils import visualization_utils as vis_util
 
 MODEL_NAME = 'ssd_mobilenet_v1_coco_11_06_2017'
 
-# Path to frozen detection graph. This is the actual model that is used for the object detection.
+#Pfad zum Trainierten Modell fuer Object Detection 
+
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
 
 # List of the strings that is used to add correct label for each box.
